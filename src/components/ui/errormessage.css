@@ -1,0 +1,15 @@
+.error-message {
+  text-align: center;
+  background: var(--secondary-color);
+  border: solid 1px var(--error-color)
+}
+
+.error-message h2 {
+  color:  var(--error-color);
+  font-size: 1.8rem;
+}
+
+.error-message p {
+  color:  var(--error-color);
+  font-size: 1rem;
+}
