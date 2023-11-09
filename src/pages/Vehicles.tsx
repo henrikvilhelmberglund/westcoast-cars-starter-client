@@ -4,6 +4,7 @@ import { IVehicle } from "../components/vehicle/IVehicle";
 import { get } from "../utilities/httpClient";
 import Progress from "../components/ui/Progress";
 import ErrorMessage from "../components/ui/ErrorMessage";
+import Vehicle from "../components/vehicle/Vehicle";
 
 type VehicleResponseType = {
   status: string;
@@ -23,7 +24,7 @@ const VehiclesPage = () => {
       try {
         setIsLoading(true);
         const result = await get<VehicleResponseType>(
-          "http://localhost:3000/api/"
+          "http://192.168.1.64:3000/api/"
         );
         console.log(result);
         setVehicles(result.data);
@@ -39,9 +40,18 @@ const VehiclesPage = () => {
   let content: ReactNode;
 
   if (vehicles) {
-    content = vehicles.map((vehicle) => (
-      <div key={vehicle.id}>{vehicle.manufacturer}</div>
-    ));
+    content = (
+      <>
+      <section className="vehicle-gallery"></section>
+        <section>
+          {vehicles.map((vehicle) => (
+            <div key={vehicle.id}>
+              <Vehicle {...vehicle} />
+            </div>
+          ))}
+      </section>
+      </>
+    );
   }
 
   if (isLoading) {
@@ -49,7 +59,7 @@ const VehiclesPage = () => {
   }
 
   if (error) {
-    content = <ErrorMessage text={error}/>
+    content = <ErrorMessage text={error} />;
   }
 
   return (
