@@ -4,7 +4,8 @@ export interface IVehicle {
   manufacturer: string;
   model: string;
   modelYear: string;
-  imageURL: string;
+  imageUrl: string;
   mileage: number;
   description: string;
+  vehicleId: number;
 }

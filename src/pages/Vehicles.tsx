@@ -42,14 +42,19 @@ const VehiclesPage = () => {
   if (vehicles) {
     content = (
       <>
-      <section className="vehicle-gallery"></section>
+        <section className="vehicle-gallery"></section>
         <section>
           {vehicles.map((vehicle) => (
             <div key={vehicle.id}>
-              <Vehicle {...vehicle} />
+              <Vehicle
+                image={vehicle.imageUrl}
+                vehicleId={vehicle.id}
+                manufacturer={vehicle.manufacturer}
+                model={vehicle.model}
+              />
             </div>
           ))}
-      </section>
+        </section>
       </>
     );
   }
