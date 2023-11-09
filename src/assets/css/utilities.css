@@ -1,0 +1,64 @@
+/* Uitlities classes */
+
+.page-title {
+  color: var(--secondary-color);
+}
+
+.bg-dark {
+  background: var(--text-color-dark);
+  color: var(--text-color-light);
+}
+
+.bg-light {
+  background-color: var(--light-color);
+  color: var(--text-color-dark);
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: var(--secondary-text-color);
+}
+
+.btn {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--text-color-light);
+  background: var(--text-color-dark);
+  border: solid 1px transparent;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.5rem 1.25rem;
+  margin: 0.25rem;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color-dark);
+  border: solid 1px var(--text-color-dark);
+}
+
+.btn-light {
+  background: var(--btn-light-background);
+  color: var(--text-color-dark);
+}
+
+.box {
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.box i {
+  margin-bottom: 1rem;
+}
+
+/* Media Queries */
+/* min-width:768px */
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,72 @@
+/* css classes for about page */
+#about-area {
+  padding: 1.25rem;
+  background: var(--light-color);
+  color: var(--text-color-dark);
+}
+
+#about-area div {
+  max-width: 960px;
+  margin: auto;
+}
+
+#about-area h3 {
+  text-align: center;
+}
+
+#about-area img {
+  display: none;
+}
+
+#testimonials-area {
+  background: var(--navbar-color);
+  color: var(--text-color-light);
+  padding: 1rem;
+}
+
+#testimonials-area h3 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+#testimonials-area > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#testimonials-area > div section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+  text-align: left;
+  background: var(--primary-color);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#testimonials-area > div section img {
+  display: block;
+  height: 4.4rem;
+  float: left;
+  margin: 0.4rem 1.25rem 0.4rem 0.6rem;
+  border-radius: 10%;
+}
+
+/* MEDIA QUERIES */
+/* min-width: 768px */
+@media (min-width: 768px) {
+  #about-area div {
+    display: flex;
+  }
+
+  #about-area img {
+    display: block;
+    height: 250px;
+    border: solid 1px var(--text-color-dark);
+    background: var(--light-color);
+    padding: 2px;
+  }
+}
