@@ -1,3 +1,4 @@
+import ContactForm from '../components/form/ContactForm';
 import './contact.css';
 
 const ContactPage = () => {
@@ -7,29 +8,7 @@ const ContactPage = () => {
         <section id='contact-form'>
           <h1 className='page-title'>Kontakta Oss</h1>
           <p>Fyll i formuläret nedan för att kontakta oss</p>
-          <form>
-            <div className='form-control'>
-              <label htmlFor='firstName'>Förnamn</label>
-              <input type='text' name='firstName' id='firstName' />
-            </div>
-            <div className='form-control'>
-              <label htmlFor='lastName'>Efternamn</label>
-              <input type='text' name='lastName' id='lastName' />
-            </div>
-            <div className='form-control'>
-              <label htmlFor='email'>E-Post</label>
-              <input type='email' name='email' id='email' />
-            </div>
-            <div className='form-control'>
-              <label htmlFor='message'>Meddelande</label>
-              <textarea name='message' id='message' cols={30} rows={10}></textarea>
-            </div>
-            <div className='submit-controls'>
-              <button className='btn' type='submit'>
-                Skicka
-              </button>
-            </div>
-          </form>
+          <ContactForm/>
         </section>
         <section id='contact-info'>
           <div className='container'>
