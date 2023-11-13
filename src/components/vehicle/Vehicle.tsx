@@ -1,6 +1,5 @@
 import { FC } from "react";
 import Card from "../ui/Card";
-import { Link } from "react-router-dom";
 
 // Alternativ 1 (hantera en bil åt gången)
 
@@ -76,42 +75,13 @@ import { Link } from "react-router-dom";
 // }
 
 // Alternativ 4
-// type VehicleProps = {
-//   image: string;
-//   vehicleId: number;
-//   manufacturer: string;
-//   model: string;
-// };
-
-// const Vehicle: FC<VehicleProps> = ({
-//   image,
-//   vehicleId,
-//   manufacturer,
-//   model,
-// }) => {
-//   const url = "../src/assets/images/";
-//   return (
-//     <Card image={{ src: url + image, alt: vehicleId.toString() }}>
-//       <p>{manufacturer} - {model}</p>
-//       <button className="btn">Visa mer</button>
-//     </Card>
-//     // <section>
-//     //   <div>
-//     //     <img src={`${url}${imageUrl}`} alt={vehicleId.toString()} />
-//     //     <p>
-//     //       {manufacturer} - {model}
-//     //     </p>
-//     //   </div>
-//     // </section>
-//   );
-// }
-
 type VehicleProps = {
   image: string;
   vehicleId: number;
   manufacturer: string;
   model: string;
 };
+
 const Vehicle: FC<VehicleProps> = ({
   image,
   vehicleId,
@@ -121,14 +91,19 @@ const Vehicle: FC<VehicleProps> = ({
   const url = "../src/assets/images/";
   return (
     <Card image={{ src: url + image, alt: vehicleId.toString() }}>
-      <p>
-        {manufacturer} - {model}
-      </p>
-      <Link to={`/vehicles/${vehicleId}`} className="btn">
-        Visa mer
-      </Link>
+      <p>{manufacturer} - {model}</p>
+      <button className="btn">Visa mer</button>
     </Card>
+    // <section>
+    //   <div>
+    //     <img src={`${url}${imageUrl}`} alt={vehicleId.toString()} />
+    //     <p>
+    //       {manufacturer} - {model}
+    //     </p>
+    //   </div>
+    // </section>
   );
-};
+}
 
 export default Vehicle;
+

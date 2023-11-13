@@ -5,6 +5,5 @@ export interface IVehicleDetail extends IVehicle {
   modelYear: string;
   mileage: number;
   description: string;
-  value: number;
   vehicleId: number;
 }

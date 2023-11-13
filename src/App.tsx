@@ -8,7 +8,6 @@ import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
 import Footer from "./components/ui/Footer";
-import VehicleDetailPage from "./pages/VehiclesDetail";
 
 const App = () => {
   return (
@@ -20,7 +19,6 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/vehicles" element={<VehiclesPage />} />
-          <Route path='/vehicles/:id' element={<VehicleDetailPage />} />
         </Routes>
       </BrowserRouter>
       <Footer text={"Westcoast Cars © 2023"} />

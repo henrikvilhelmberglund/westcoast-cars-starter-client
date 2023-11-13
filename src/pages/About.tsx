@@ -1,55 +1,54 @@
-import "./about.css";
+import './about.css';
 
-import displayImg from "../assets/images/display-3.jpg";
-import femaleOneImg from "../assets/images/woman.jpg";
-import femaleTwoImg from "../assets/images/woman-2.jpg";
-import maleImg from "../assets/images/man.jpg";
-import Testimonial from "../components/ui/Testimonial";
+import displayImg from '../assets/images/display-3.jpg';
+import femaleOneImg from '../assets/images/woman.jpg';
+import femaleTwoImg from '../assets/images/woman-2.jpg';
+import maleImg from '../assets/images/man.jpg';
 
 const AboutPage = () => {
   return (
     <main>
-      <article id="about-area">
+      <article id='about-area'>
         <div>
           <section>
-            <h3 className="page-title">Vilka är vi?</h3>
+            <h3 className='page-title'>Vilka är vi?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis aspernatur aut impedit laudantium error, quod dolor
-              porro dolore nostrum ipsam neque adipisci officiis asperiores
-              maxime quia, qui illum illo, cumque cupiditate voluptate totam
-              alias ab dolorem. Cupiditate vitae reprehenderit, nam ratione,
-              blanditiis deleniti id laudantium voluptatum, corrupti nihil optio
-              natus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aspernatur aut
+              impedit laudantium error, quod dolor porro dolore nostrum ipsam neque adipisci
+              officiis asperiores maxime quia, qui illum illo, cumque cupiditate voluptate totam
+              alias ab dolorem. Cupiditate vitae reprehenderit, nam ratione, blanditiis deleniti id
+              laudantium voluptatum, corrupti nihil optio natus.
             </p>
           </section>
           <section>
-            <img src={displayImg} alt="Car display" />
+            <img src={displayImg} alt='Car display' />
           </section>
         </div>
       </article>
-      <article id="testimonials-area">
-        <h3 className="page-title">Vad tycker våra kunder?</h3>
+      <article id='testimonials-area'>
+        <h3 className='page-title'>Vad tycker våra kunder?</h3>
         <div>
-          <Testimonial image={{ src: femaleOneImg, alt: "Kund 1" }}>
+          <section>
+            <img src={femaleOneImg} alt='customer 1' />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus error voluptatibus aliquam fuga vero asperiores
-              consequuntur dolores ratione optio ipsum.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, sequi. Dignissimos
+              quae eligendi reprehenderit libero nostrum repudiandae labore dicta veritatis.
             </p>
-          </Testimonial>
-          <Testimonial image={{ src: maleImg, alt: "Kund 2" }}>
-            <h4>Hej!</h4>
+          </section>
+          <section>
+            <img src={maleImg} alt='customer 2' />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus error voluptatibus aliquam fuga vero asperiores
-              consequuntur dolores ratione optio ipsum. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Placeat, doloribus?
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, sequi. Dignissimos
+              quae eligendi reprehenderit libero nostrum repudiandae labore dicta veritatis.
             </p>
-          </Testimonial>
-          <Testimonial image={{ src: femaleTwoImg, alt: "Kund 3" }}>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </Testimonial>
+          </section>
+          <section>
+            <img src={femaleTwoImg} alt='customer 3' />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, sequi. Dignissimos
+              quae eligendi reprehenderit libero nostrum repudiandae labore dicta veritatis.
+            </p>
+          </section>
         </div>
       </article>
     </main>
