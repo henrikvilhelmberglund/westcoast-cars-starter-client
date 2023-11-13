@@ -1,0 +1,33 @@
+.vehicle-info {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-color);
+  color: var(--text-color-dark);
+  padding: 1rem;
+}
+.vehicle-info img {
+  border: solid 1px var(--text-color-dark);
+  padding: 0.1rem;
+  width: 100%;
+}
+
+.vehicle-info div {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.vehicle-info .title {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.vehicle-info .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border-top: solid 1px var(--text-color-dark);
+  padding-top: 1rem;
+}

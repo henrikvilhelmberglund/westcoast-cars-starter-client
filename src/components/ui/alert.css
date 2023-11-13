@@ -1,0 +1,26 @@
+.alert {
+  margin: 2rem 0;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+.alert-info {
+  border: 1px solid var(--info-color);
+  background: var(--info-background-color);
+  color: var(--info-color);
+}
+
+.alert-warning {
+  border: 1px solid var(--warning-color);
+  background: var(--warning-background-color);
+  color: var(--warning-color);
+}
+
+.alert-error {
+  border: 1px solid var(--error-color);
+  background: var(--error-background-color);
+  color: var(--error-color);
+}
